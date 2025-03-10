@@ -1537,9 +1537,7 @@ a {
     place-self: end center;
   }
 }
-*:focus {
-  outline: none !important;
-}
+
 
 
 
