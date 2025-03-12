@@ -1549,6 +1549,19 @@ a {
 *:focus {
   outline: none !important;
 }
+.logo-container {
+  display: flex;
+  gap: 10px; /* Mellanrum mellan logotyperna i desktop-läge */
+}
+
+/* När skärmen är 800px eller mindre */
+@media (max-width: 1050px) {
+  .logo-container {
+    flex-direction: column; /* Staplar logotyperna vertikalt */
+    align-items: center; /* Centrerar dem horisontellt */
+    gap: 20px; /* Justerar mellanrummet mellan logotyperna */
+  }
+}
 
 
 
