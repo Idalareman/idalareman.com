@@ -444,13 +444,21 @@ a {
 .image-container {
   grid-column-gap: 0px;
   grid-row-gap: 0px;
-  flex-flow: column;
   display: flex;
+  flex-direction: column;  /* Behåll vertikal layout */
+  align-items: center;     /* Se till att bilderna centreras horisontellt */
+  justify-content: center; /* Justera innehållet om det behövs */
+  width: 100%;             /* Gör containern 100% bred */
+  box-sizing: border-box;  /* Säkerställ att padding inte påverkar bredden */
 }
 
 .brand-image {
   margin-top: 10px;
   margin-bottom: 10px;
+  width: 100%;        /* Gör bilderna responsiva */
+  height: auto;       /* Bevara bildens proportioner */
+  display: block;     /* Förhindra bilder från att vara inline */
+  max-width: 100%;    /* Förhindrar att bilderna blir större än containern */
 }
 
 .link-block-projekt {
