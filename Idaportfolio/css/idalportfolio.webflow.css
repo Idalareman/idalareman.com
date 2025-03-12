@@ -450,6 +450,7 @@ a {
   justify-content: center; /* Justera innehållet om det behövs */
   width: 100%;             /* Gör containern 100% bred */
   box-sizing: border-box;  /* Säkerställ att padding inte påverkar bredden */
+  gap: 20px;
 }
 
 .brand-image {
